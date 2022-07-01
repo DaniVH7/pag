@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="busqueda.css">
+        
+    </head>
+    <li>
+        <a href="pag.inicial.html" style="text-shadow: 0px 0px 20px green; color: red;">Inicio</a>
+    </li>
+    <body>
+        <main>
+            <h1>Seleccionar</h1><hr>
+            <form action="conexionbusqueda.php" method="post">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td class="izq"><label for txtQueso class="lbl">Queso</label></td>
+                            <td class="der"><input class="txt" type="text" id="txtQueso" name="txtQueso" placeholder="TIPO DE QUESO"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="btn" type="submit" id="btnEnviar" value="BUSCAR">&nbsp;
+                            <input class="btn" type="reset" id="btnEnviar" value="LIMPIAR">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </main>
+        <h1>Insertar</h1><hr>
+        <form action="insertar.php" method="post">
+            <section id="verificacion" class="contenedor">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td class="izq">
+                                <label class="lbl" for="txtTipo">Tipo:</label>
+                            </td>
+                            <td class="der">
+                                <input type="text" class="txt" id="txtTipo" name=
+                                "txtTipo" placeholder="PIZZA SELECCIONADA">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="izq">
+                                <label class="lbl" for="txtTipo">Tama&ntilde;o:</label>
+                            </td>
+                            <td class="der">
+                                <input type="text" class="txt" id="txtTama" name=
+                                "txtTama" placeholder="TAMAÑO SELECCIONADO">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="izq">
+                                <label class="lbl" for="txtTipo">Masa:</label>
+                            </td>
+                            <td class="der">
+                                <input type="text" class="txt" id="txtMasa" name=
+                                "txtMasa" placeholder="Masa SELECCIONADA">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="izq">
+                                <label class="lbl" for="txtTipo">Queso:</label>
+                            </td>
+                            <td class="der">
+                                <input type="text" class="txt" id="txtQueso" name=
+                                "txtQueso" placeholder="QUESO SELECCIONADO">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="izq">
+                                <label class="lbl" for="areaIngre2">Ingredien.:</label>
+                            </td>
+                            <td class="der">
+                                <textarea id="areaIngre2" name="areaIngre2" rows="3"
+                                cols="27" placeholder="INGREDIENTES SELECCIONADOS">
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="izq" rowspan="2">
+                                <label class="lbl">Precio:</label>
+                            </td>
+                            <td class="der" rowspan="2">
+                                <input type="text" class="txt" id="txtPrecio" name=
+                                "txtPrecio" placeholder="PRECIO TOTAL">
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td class="izq">
+                            </td>
+                            <td class="der">
+                                <input type="submit" class="btn" id="enviar"
+                                value="GUARDAR">&nbsp;
+                                <input type="reset" class="btn" id="borrar"
+                                value="limpiar">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+        </form>
+        <h1>Actualizar</h1><hr>
+        <form action="actualizar.php" method="post">
+            <section id="verificacion" class="contenedor">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td class="izq">
+                                <label class="lbl" for="txtCodigo">C&oacute;digo</label>
+                            </td>
+                            <td class="der">
+                                <input type="text" class="txt" id="txtCodigo" name=
+                                "txtCodigo" placeholder="INGRESA EL CODIGO">
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td class="izq">
+                                <label class="lbl" for="areaIngre2">Ingredienes<br>a Actualizar:</label>
+                            </td>
+                            <td class="der">
+                                <textarea id="areaIngre2" name="areaIngre2" rows="3"
+                                cols="27" placeholder="INGREDIENTES SELECCIONADOS">
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" class="btn" id="enviar"
+                                value="GUARDAR">&nbsp;
+                                <input type="reset" class="btn" id="borrar"
+                                value="LIMPIAR">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+        </form>
+        <h1>Eliminar</h1><hr>
+        <form action="eliminar.php" method="post">
+            <fieldset>
+                <table>
+                    <tr>
+                        <td class="izq">
+                            <label class="lbl" for="txtCodigo">C&oacute;digo</label>
+                        </td>
+                        <td class="der">
+                            <input class="txt" type="txt" id="txtCodigo" name
+                            ="txtCodigo" placeholder="INGRESA EL CODIGO">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="izq"></td>
+                        <td class="der">
+                            <input type="submit" class="btn" id="enviar"
+                            value="ELIMINAR">&nbsp;
+                            <input type="reset" class="btn" id="borrar" 
+                            value="LIMPIAR">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>

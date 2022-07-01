@@ -1,0 +1,50 @@
+body
+{ width: 400px; margin: auto; background-color: #660033}
+
+h1
+{ text-align: center; color: #99CC00; text-shadow: 0 5px 5px #FFFF00;}
+
+table
+{
+    width: 100%;
+    margin: 5px 5ox 0px 0px;
+    padding: 10px 5px 10px 5px;
+    border: 2px solid #FF3300;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #FF3300;
+    background-color: #FFFF00;
+}
+
+.izq { width: 220px ; text-align: right; padding-right: 5px;}
+.der { width: 120px ; text-align: left; padding-left: 5px;}
+td { padding: 5px; }
+
+.lbl
+{ font-size: 16px; font-family: serif; font-weight: bolder; color: #FF3300; }
+
+.txt, textarea
+{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #99CC00;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.txt:focus, textarea:focus
+{
+    background-color: #660033; border-color: #FF3300;  box-shadow: 0px 0px 5px 0px #FF3300;
+}
+
+textarea {height: 60px;}
+
+.btn
+{
+    width: 90px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #660033;
+    color: #FFFFFF;
+}

@@ -1,0 +1,43 @@
+
+body
+{   width: 400px;    margin: auto;    background-color: #000000;  }
+
+h1
+{   text-align: center;    color: #ff0000;    text-shadow: 0 5px 5px rgb(22, 238, 3);    }
+
+table
+{
+    width: 100%;
+    margin: 5px 5px 0px 0px;
+    padding: 10px 5px 10px 5px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #ffffff;
+    background-color: #002fff;
+}
+
+.izq {    width: 220px; text-align: right; padding-right: 5px;    }
+.der {    width: 120px; text-align: left; padding-right: 5px;    }
+td {    padding: 5px;    }
+
+.lbl
+{   font-size: 16px;    font-family: serif;    font-weight: bolder;    color: #FF3300;    }
+
+.txt, textarea
+{
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #7eaa6a;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.txt:focus, textarea:focus
+{
+    background-color: #ff1d8e; border-color: #FF3300; box-shadow: 0px 0px 5px 0px #FF3300;
+}
+
+textarea { height: 60px; }
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title>HTML Cristian
+    </title>
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="source/css/pizzas.css">
+ <link rel="stylesheet" type="text/css" href="source/css/prueba.css">
+ <link rel="icon" href="source/imagenes/crashban.jpg" type="image/png">
+ <body style="background-color: black;"></body>
+ 
+<body><br>
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <b></b>
+                <b></b>
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Inicio</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="Form.html">
+                    <span class="icon"><ion-icon name="clipboard-outline"></ion-icon></span>
+                    <span class="title">Formulario</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="horario.html">
+                    <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+                    <span class="title">Horario</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="banderas.html">
+                    <span class="icon"><ion-icon name="flag-outline"></ion-icon></span>
+                    <span class="title">Banderas</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="pizzas.html">
+                    <span class="icon"><ion-icon name="pizza-outline"></ion-icon></span>
+                    <span class="title">Pizza</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="pruebaform.html">
+                    <span class="icon"><ion-icon name="ellipsis-vertical-outline"></ion-icon></span>
+                    <span class="title">Barra</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="https://replit.com/@DaniVH7" target="_blank">
+                    <span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>
+                    <span class="title">Sokoban</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="conectarbase.html">
+                    <span class="icon"><ion-icon name="logo-firebase"></ion-icon></span>
+                    <span class="title">Conectar base</span>
+                </a>
+            </li>
+        </ul>
+       </div>
+       <div class="toggle"><ion-icon name="grid-outline" class="open">
+       </ion-icon><ion-icon name="close-outline" class="close"></ion-icon></div>
+       <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation')
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+       </script>
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+       <script>
+        let list= document.querySelectorAll('.list');
+        for (let i =0; i<list.length; i++){
+            list[i].onclick = function(){
+                let j = 0;
+                while(j < list.length){
+                    list[j++].className = 'list';
+                }
+                list[i].className= 'list active'
+            }
+        }
+        </script>
+    <div class="contenedor">
+        <div class="arriba"><div class="logo1"><img src="source/imagenes/logopp.png" width="45%" height="100%"></div>
+            <div class="largo">
+                <div class="logo"><img src="source/imagenes/logopp.png" width="45%" height="100%"></div>
+                <div class="letra"><font color="purple">Pizzas </font><br><font color="red">Nuestra masa se prepara diariamente
+            <br> Solo 100% autentico queso Mozzarella</font></div></div></div>
+            <div class="derecha1">
+                <div class="derecha2">Paso 4: Elige los extra "Ingredientes" para tu Pizza<hr color="green" size=3>
+                    <div class="ingredientes">
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingrepeperoni" text="Peperoni">Peperoni</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingrejamon" text="">Jamon</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingretocino" text="">Tocino</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingresalchicha" text="">Salchicha</label></div>
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingrechorizo" text="">Chorizo</label></div>    
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingrecarne" text="">Carne</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingrechampiñones" text="">Champiñon</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingrepimiento" text="">Pimiento</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingrecebolla" text="">Cebolla</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingreaceitunas" text="">Aceitunas</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingrejalapeño" text="">Jalapeño</label></div>            
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingretomate" text="">Tomate</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingrepiña" text="">Piña</label></div>  
+                        <div class="ingre"><label><input type="checkbox" name="ingrediente"value="ingre" text=""></label></div>  
+                    </div>
+                </div>
+                <div class="derecha3">Verifica tu Orden<hr color="green" size=3>
+                    <div class="verifica">
+                        <div class="image1"><img src="source/imagenes/pizza1.jpg" width="100%" height="100%"></div>
+                        <div class="pizzatipo">
+                            <div class="tipo">Pizza:</div>
+                            <div class="tipo">Tamaño:</div>
+                            <div class="tipo">Masa:</div>
+                            <div class="tipo">Queso:</div>
+                            Ingredientes:
+                        </div>
+                        <div class="ingredientesderecha">
+                            <div class="texto"><form name="textarea" method="get" action="procesar.php" Ingredientes seleccionados>
+                                <p><label ><textarea name="texto" cols="24"rows="3" ></textarea></label></p>
+                                </form></div>
+                                <div class="tipo1">Pizza:</div>
+                                <div class="guardar">Guardar</div>
+                                <div class="borrar">Borrar</div>
+                                <div class="image2"><img src="source/imagenes/pizza2.jpg"height="100%" width="100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        <div class="izquierda1">Paso 1: Elige el "Tamaño" de tu pizza<hr color="green" size=3>
+            <div class="dentro"><div class="medidas"><img src="source/imagenes/1214.png" width="100%" height="100%"></div>
+                <div class="tabla1"><table>
+                    <tr>
+                        <td><p><label><input type="radio" name="tamaño" value="mediana" ></label>Mediana</td>
+                        <td><p><label><input type="radio" name="tamaño" value="mediana"></label>Grande</td>
+                        <td><p><label><input type="radio" name="tamaño" value="mediana"></label>X-Grande</td>
+                    </tr>
+                    <tr>
+                        <td>8 Rebanadas</td>
+                        <td>8 Rebanadas</td>
+                        <td>12 Rebanadas</td>
+                    </tr>
+                    <tr>
+                        <td>$135</td>
+                        <td>$165</td>
+                        <td>185</td>
+                    </tr>
+                </table></div>
+            </div>
+        </div>    
+        <div class="izquierda2">Paso 2: ELige la "Masa" para tu pizza<hr color="green" size=3>
+            <div class="dentro1"><div class="descri">
+                <div class="l1">-Nuestra masa tradicional</div><br>
+                <div class="l2">-Masa lijera y Crujiente</div><br>
+                <div class="l3">-Esponjosa y Suave(+$15)</div><br>
+                <div class="l4">-Orilla rellena de Queso Mozzarella(+$30)</div>
+            </div>
+                <div class="masota"><div class="masa2"></div>
+                    <div class="masa1" >Original<br>Ultradelgada<br>Pan<br>XtraStuf</div>
+            </div>
+            </div>
+        </div>
+         
+        <div class="izquierda3">Paso 3: Elige el Queso "Extra" para tu pizza<hr color="green" size=3>
+            <div class="contorno">
+                <table style="width: 100%; align-items: center;">
+                    <tr>
+                        <td></td>
+                        <td>Mediana</td>
+                        <td>Grande</td>
+                        <td>X-Grande</td>
+                    </tr>
+                    <tr>
+                        <td>Ingredi-<br>entes</td>
+                        <td>$ 12</td>
+                        <td>$ 14</td>
+                        <td>$ 18</td>
+                    </tr>
+                    <tr>
+                        <td>Quesos</td>
+                        <td>$ 15</td>
+                        <td>$ 18</td>
+                        <td>$ 20</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="queso">-Sin Queso extra<br><br>
+                -Queso Mozzarella<br><br>-Queso Cheddar<br><br>-Queso Provolone</div>
+        </div>   
+        <div class="footer">Especialidades - Ingredientes Preseleccionados<hr color="green" size=3>
+            <div class="pie">
+                <table style="width:100% ;">
+                    <tr>
+                        <td rowspan="2"><select name="despegable" id="despegable">
+                            <p><option option="Ninguna" value="ninguna" style="background-color: rgb(96, 105, 155);">Ninguna</option>
+                            <p><option option="Carne" value="carne" style="background-color: rgb(96, 105, 155);">Carne
+                            <p><option option="Jamon" value="jamon" style="background-color: rgb(96, 105, 155);">Jamon</td>          
+                        <td rowspan="2"><textarea name="texto" cols="12"
+                            rows="4" style="background-color: rgb(96, 105, 155)";></textarea></p></form></td>
+                        <td>Mediana</td>
+                        <td>Grande</td>
+                        <td>X-Grande</td>
+                    </tr>
+                    <tr>
+                        <td>$ 159</td>
+                        <td>$ 193</td>
+                        <td>$ 221</td>
+                    </tr>
+                </table>
+            </div>
+            </div>   
+    </div>  
+</body>

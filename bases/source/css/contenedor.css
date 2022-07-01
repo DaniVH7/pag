@@ -1,0 +1,84 @@
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+a {
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #333;
+}
+
+.contenedor{
+width: 40%;
+height: 110%;
+border: 1px solid rgb(0, 0, 0);
+background-image: url("toystory.jpg");
+box-shadow: 0px 0px 20px red inset, 0px 0px 25px blue;
+
+}
+.contenedorI{
+width: 58%;
+height: 67%;
+border: 1px solid rgb(0, 0, 0);
+margin: auto;
+float: right;
+background-image: url("toystory.jpg");
+box-shadow: 0px 0px 20px red inset, 0px 0px 25px blue;
+
+}
+.idiomas{
+width: auto;
+height: auto;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+}
+.complete{
+border: 1px solid white;
+background-color: white;
+
+margin: auto;
+}
+.nombre{
+width: auto;
+height: auto;
+
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+}
+.despegable{
+width: auto;
+height: auto;
+}
+.letra1{
+    border: 1px solid black;
+    font-size: 1cm;
+    text-align: center;
+    background: -webkit-linear-gradient(180deg, rgb(179, 176, 51), #f66);
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: -300%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  
+  }

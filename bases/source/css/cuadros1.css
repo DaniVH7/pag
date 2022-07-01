@@ -1,0 +1,214 @@
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+a {
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #333;
+}
+.letras{
+  background: linear-gradient(to bottom, rgb(39, 39, 114), white);
+  color: white;
+  width: auto;
+  text-align: center;
+  animation-duration: 4s;
+  animation-name: fadeIn;  
+}
+@keyframes fadeIn {
+  from {
+    
+    opacity: -50;
+  }
+  to {
+    opacity: 100;
+  }
+
+}
+.contenedor{
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  margin: auto;
+
+background-image: url("toystory.jpg");
+box-shadow: 0px 0px 20px red inset, 0px 0px 25px blue;
+}
+.conte{
+  border: 1px solid black;
+  width: 100%;
+  height: 40vh;
+  margin: .5px;
+  flex-wrap: nowrap;
+}
+.conte1{
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+  height: 300px;
+  margin: .5px;
+  flex-direction: column;
+}
+.españa{
+  border: 3px solid rgb(255, 255, 255);
+  width: 47%;
+  height: 100%;
+  float: left;
+  flex-direction: row;
+  
+  margin: auto;
+}
+.surinam{
+  border: 3px solid rgb(255, 255, 255);
+  width: 50%;
+  height: 100%;
+  flex-direction: row;
+  float: right;
+  margin: auto;
+}
+.emiratos{
+  border: 3px solid rgb(255, 255, 255);
+  width: 47%;
+  height: 100%;
+  float: left;
+  margin: auto;
+}
+.panama{
+  border: 3px solid rgb(255, 255, 255);
+  width: 50%;
+  height: 100%;
+  float: right;
+  margin: auto;
+}
+.rojo{
+  border: 1px solid rgb(173, 21, 25);
+  width: 99.8%;
+  height: 29%; 
+  background-color: red;
+} 
+.amarillo{
+  border: 1px solid rgb(173, 21, 25);
+  background-color: rgb(250, 189, 32);
+  text-align: center;
+  width: 99.8%;
+  height: 39%;
+}
+.rojote{
+  border: 1px solid rgb(241, 5, 5);
+  background-color: red;
+  width: 99.8%;
+  height: 29%;  
+}
+
+.verde{
+  border: 1px solid #377e37;
+  background-color: #377e37;
+  width: 99.8%;
+  height: 19%;
+}
+.blanco{
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  width: 99.8%;
+  height: 59%;
+}
+.verdesote{
+  border: 1px solid #377e37;
+  background-color: #377e37;
+  width: 99.9%;
+  height: 20%;
+}
+.vino{
+  border: 1px solid #b40a2b;
+  background-color: #b40a2b;
+  width: 99.8%;
+  height: 60%;
+
+}
+.estre{
+  color: #ecc81d;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-size: 500%;
+}
+.rojoclaro{
+  border: 1px solid #e41624;
+  background-color: #e41624;
+  width: 25%;
+  height: 100%;
+}
+.verdeemi{
+  border: 1px solid #009739;
+  background-color: #009739;
+  width: 74.5%;
+  height: 33.3%;
+  float:right ;
+}
+.blancoemi{
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  width: 74.5%;
+  height: 33.3%;
+  float: right;
+}
+.negroemi{
+  border: 1px solid #000000;
+  background-color: #000000;
+  width: 74.5%;
+  height: 32%;
+  float: right;
+}
+.arriba{
+  border: 1px solid #0f0e0e;
+  background-color: #ffffff;
+  width: 100%;
+  height: 50%;
+  
+}
+.abajo{
+  
+  width: 100%;
+  height: 50%;
+}
+.blancopanama{
+  color: #072357;
+  font-size: 550%;
+  text-align: center;
+  background-color: #ffffff;
+  width: 50%;
+  height: 100%;
+}
+.rojopanama{
+  
+  background-color: #da121a;
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+.blancopana{
+  color: #da121a;
+  font-size: 550%;
+  text-align: center;
+  background-color: #ffffff;
+  width: 49.9%;
+  height: 100%;
+  float: right;
+}
+.azul{
+  background-color: #072357;
+  width: 50%;
+  height: 100%;
+  
+}
